@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: rgb(0, 28, 82);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 28, 82, 1) 0%,
+    rgba(108, 9, 121, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: white;
+  background-color: #f9f9f9;
+}
+
+/* Header Styles */
+
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 1em;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+.header h1 span {
+  font-size: 0.8em;
+  font-weight: normal;
+  color: #00ff00; /* or any other green shade you prefer */
+}
+
+.header a:hover {
+  color: #ccc;
+}
+
+/* Navigation Styles */
+
+.nav {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav li {
+  margin-top: 10px; /* reduce margin top to 10px */
+  padding-right: 50px; /* reduce padding right to 50px */
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #ac33ff;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 768px) {
+  .nav {
+    flex-direction: column;
+  }
+  .nav ul {
+    flex-direction: column;
+  }
+  .nav li {
+    margin-right: 0;
+  }
+}
+.login-button {
+  background-color: white; /* green background color */
+  color: black; /* white text color */
+  border: none; /* remove border */
+  border-radius: 100px;
+  padding: 15px 40px; /* add padding */
+  font-size: 20px; /* set font size */
+  cursor: pointer; /* change cursor to pointer on hover */
+}
+
+.login-button:hover {
+  color: white;
+  background-color: rgb(0, 28, 82);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 28, 82, 1) 0%,
+    rgba(108, 9, 121, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  ); /* darker green background color on hover */
+}
+.buy-button {
+  background-color: #4caf50; /* green background color */
+  color: #ffffff; /* white text color */
+  border: none; /* remove border */
+  padding: 10px 40px; /* add some padding */
+  font-size: 16px; /* set font size */
+  cursor: pointer; /* change cursor to pointer on hover */
+  border-radius: 5px; /* add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* add shadow */
+  position: fixed; /* position relative to viewport */
+  top: 20px; /* move 20px down from top of viewport */
+  left: 1130px; /* move 30px right from left of viewport */
+}
+
+.buy-button:hover {
+  background-color: #3e8e41; /* darker green background color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* increase shadow on hover */
+}
+.text {
+  color: white;
+  font-size: 24px;
+  padding-left: 10px;
+  padding-top: 100px;
+  font-family: var(--tg-heading-font-family);
+  font-weight: 700;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.purchase-button {
+  background-color: white; /* green background color */
+  color: black; /* white text color */
+  border: none; /* remove border */
+  padding: 10px 40px; /* add some padding */
+  font-size: 16px; /* set font size */
+  cursor: pointer; /* change cursor to pointer on hover */
+  border-radius: 5px; /* add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* add shadow */
+}
+.purchase-button:hover {
+  background-color: rgb(0, 28, 82);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 28, 82, 1) 0%,
+    rgba(108, 9, 121, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  ); /* darker green background color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* increase shadow on hover */
+  color: white;
+}
+.read-button {
+  background-color: #01002a; /* green background color */
+  color: white; /* white text color */
+  border: none; /* remove border */
+  padding: 10px 40px; /* add some padding */
+  font-size: 16px; /* set font size */
+  cursor: pointer; /* change cursor to pointer on hover */
+  border-radius: 5px; /* add rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* add shadow */
+  position: fixed; /* position relative to viewport */
+  top: 450px; /* move 20px down from top of viewport */
+  left: 250px; /* move 30px right from left of viewport */
+}
+.read-button:hover {
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* increase shadow on hover */
+  color: black;
+}
